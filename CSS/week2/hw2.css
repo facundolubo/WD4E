@@ -1,124 +1,72 @@
-aside {
-    float: left;
-    display: align;
-    padding: 5%;
-    width: 5%;
-    margin: 5%;
-    border: 100px solid rgb(0, 0, 0);
-}
+/* For responsiveness I'm using % for setting sizes, Try resizing your browser */
 body {
-    background-color: rgb(255, 255, 255);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 20px;
-    color: rgb(0, 0, 0);
+    padding: 0.5%;
+    margin: 0.5%;
+}
+header{
+    background-color: #b0dbb0;
+    background-image: url('./flywheel.jpg');
+    background-size: 100%;
+    padding: 2%;
+}
+
+h1{
     text-align: center;
-    margin: 0;
-    padding: 0;
-}
-nav {
-    background-image: url("flywheel.jpg");
-    background-color: rgb(255, 255, 255);
-    padding: 10px;
-    border: 1px solid rgb(0, 0, 0);
-    border-radius: 10px;
-    box-shadow: 5px 5px 5px rgb(0, 0, 0);
-    box-sizing: border-box;
-    text-align: center;
-    color: rgb(0, 0, 0);
+    color: #ffffff;
+    text-transform: uppercase;
 }
 
-ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-li {
-    float: left;
-}
-
-a {
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    font-size: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: bold;
-    border: 1px solid rgb(0, 0, 0);
-    border-radius: 10px;
-    box-shadow: 5px 5px 5px rgb(0, 0, 0);
-    box-sizing: border-box;
-    padding: 10px;
-    margin: 10px;
+nav a{		        /* Styling navigation link */
     display: inline-block;
-    background-color: rgb(255, 255, 255);
-    cursor: pointer;
-}
-
-a:hover {
-    color: #fff;
-    background-color: #000;
-}
-a:active {
-    background-color: rgb(131, 122, 122);
-    color: rgb(144, 7, 7);
-    box-shadow: 0px 0px 0px rgb(0, 0, 0);
-    border: 0px solid rgb(0, 0, 0);
-}
-
-a:visited {
-    color: rgb(20, 49, 124);
-}
-
-.left {
-    display: inline;
-    float: left;
-    width: 25%;
-    background-color: rgb(255, 255, 255);
-    padding: 5px;
-    margin: 5px;
-    border: 1px solid rgb(0, 0, 0);
+    margin: .5%;
+    margin-left: 5%;
     border-radius: 5px;
-    box-shadow: 1px 1px 1px rgb(0, 0, 0);
-    box-sizing: content-box;
+    text-decoration: none;
     text-align: center;
-    color: rgb(0, 0, 0);
+    padding: 1% 5%;
+    font-size: 2vw;         /* Relative to 2% of the height of the viewport or browser window */
+    color: #000;
+    background-color: #ccc5;
 }
 
-.left img {
-    height: 100%;
-    width: 100%;
-}
-.right {
-    display: block;
-    float: right;
-    width: 71%;
-    background-color: rgb(255, 255, 255);
-    padding: 10px;
-    margin: 10px;
-    border: 1px solid rgb(0, 0, 0);
-    border-radius: 10px;
-    box-shadow: 5px 5px 5px rgb(0, 0, 0);
-    box-sizing: border-box;
-    text-align: center;
-    color: rgb(0, 0, 0);
+.active{
+    color: #080;
+    background-color: #fffc;
 }
 
-header {
-    background-color:rgb(155, 155, 155)
+nav a:hover{        /* Highlight by cursor hover */
+    background-color: #0b05;
 }
-header h1 {
+
+nav a:focus{        /* Highlight by tab button */
+    background-color: #0b05;
+}
+
+.left{		        /* Aside tag class */
+    float: left;
+    width: 20%;
+    padding: 2%;
+    height: 100vh;
+    background-color: #770;
     text-align: center;
+}
+
+.left img{        /* Left sided images */
+    border: 3px solid #020;
+    width: 17vw; /*60%*/
+    margin: 8% 2%;
+}
+
+.right{
+    background-color: #fff4;
+    margin-left: 22%;
+    padding: 2.5%;
+    font-size: 1.4vw;
+}
+
+h2 {
+    display: inline;
+    color: #330066;
     text-transform: uppercase;
-    color: rgb(255, 255, 255)
 }
-header a {
-    color: rgb(0, 0, 0)
-}
-main {
-    background-color: rgb(102, 102, 102);
-}
-main h2 {
-    text-align: left;
-    text-transform: uppercase;
-    color: rgb(31, 24, 118)
-}
+
